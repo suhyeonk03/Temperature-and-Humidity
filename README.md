@@ -9,4 +9,9 @@ I read temperature and humidity using SHTC3 sensor built on the ESP32C3 board,
 - DFRobot_RGBLCD1602.cpp and DFRobot_RGBLCD1602.h are by 2010 DFRobot Co.Ltd
 - main.cpp is by 2024 Espressif Systems (Shanghai) CO LTD, espressif/esp-idf/examples/peripherals/i2c/i2c_basic/main
 
+## Used Libraries
 
+## Phase 1: Soldering
+
+## Phase 2: 
+## Phase 3: 
