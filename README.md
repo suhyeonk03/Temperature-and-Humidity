@@ -17,6 +17,7 @@ Displays the temperature and humidity on the DFRobot_RGBLCD1602, obtained from t
 
 ## Phase 1: Soldering
 I soldered the female header onto the ESP32-C3 board. Everything worked well, except I accidentally flipped the female header
+1B - AOYUE 9378 SOLDERING STATION
 ## Phase 2: Temperature and Humidity read
 The temperature and Humidity functions read 3 bytes using the i2c_master functions. After checking if the value is valid using a checksum, it prints the Temperature and Humidity to the terminal. 
 
