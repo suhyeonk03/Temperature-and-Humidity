@@ -26,7 +26,7 @@ Displays the temperature and humidity on the DFRobot_RGBLCD1602, obtained from t
 Soldered female header pins onto the ESP32 board using an AOYUE 9378 soldering station.
 
 ## Phase 2: Temperature and Humidity read
-Connects to the SHTC3 sensor at address 0x70 and controls its power using the wake-up command (0x3517) and the sleep command (0xB098). The temperature and humidity functions each read 3 bytes using the i2c_master_write_to_device and i2c_master_read_from_device functions. After verifying data validity through a checksum and converting the 16-bit values into readable numbers, the program outputs the temperature in Celsius and humidity as a percentage.
+Connects to the SHTC3 sensor at i2c address 0x70 and controls its power using the wake-up command (0x3517) and the sleep command (0xB098). The temperature and humidity functions each read 3 bytes using the i2c_master_write_to_device and i2c_master_read_from_device functions. After verifying data validity through a checksum and converting the 16-bit values into readable numbers, the program outputs the temperature in Celsius and humidity as a percentage.
 
 ## Phase 3: Display result on LCD (detailed expl, what act code does)
 Modified the Arduino-based functions in DFRobot_RGBLCD1602.cpp to support the ESP32 interface. Then, initialized the LCD in main.cpp with a black backlight and set the cursor to position (0, 0). The LCD displays the current temperature and humidity obtained from Phase 2 in the format: "Temp:%dC,Hum:%d%%".
